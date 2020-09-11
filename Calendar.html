@@ -15,14 +15,14 @@
         <script>
             const colorSets = ["shade", "studio-purple", "ut-orange", "forest-green", "corn-flower", "oxblood"];
             document.querySelector('body').className = colorSets[Math.floor(Math.random() * 6)];
-            // document.querySelector('main').style.backgroundImage = 'url("./Images/' + Math.ceil(Math.random() * 10) + '.jpg")';
+            document.querySelector('main').style.backgroundImage = 'url("./Images/' + Math.ceil(Math.random() * 10) + '.jpg")';
             document.querySelector('script').remove();
         </script>
         <section class="calendar">
             <section class="calendar-head">
                 <div class="selected-day"></div>
                 <div class="selected-date-full"></div>
-                <div class="today" title="Go to Today">
+                <div class="today" title="Go to Today">0
                     <svg width="100%" height="100%" viewBox="0 0 165 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                         <g transform="matrix(1,0,0,1,0.0417462,0.00848426)">
                             <path d="M1.28,73.963C2.605,75.319 4.949,79.776 8.273,79.95C11.597,80.123 12.471,79.798 13.886,78.824C15.302,77.85 22.03,72.705 22,72.71C21.97,72.714 35,61.682 35,61.682L53.031,46.571L66.569,35.421L81.98,22.935L90.85,29.958L102.513,39.47L121.36,55.239L135.431,67.06L147.261,76.688L148.483,77.566L150.021,78.568C150.021,78.568 152.465,80.226 153.824,79.945C155.183,79.664 154.769,80.195 157.902,78.958C161.034,77.722 162.889,73.757 163.035,73.466C163.18,73.174 165.67,68.872 162.266,65.274C158.862,61.677 145.888,50.958 145.888,50.958L92.499,6.215C92.499,6.215 85.057,0.946 85.022,0.953C84.987,0.96 83.512,0.081 82.073,0.061C80.634,0.04 79.447,0.095 77.155,1.958C74.864,3.822 67.912,9.142 67.893,9.118C67.874,9.095 56.11,18.95 56.075,18.907C56.039,18.865 42.77,30.125 42.527,29.958C42.203,29.735 41.855,28.274 42.001,22.661C42.256,12.844 40.118,12.356 39.855,11.82C39.592,11.284 37.902,9.972 33.45,9.967C28.999,9.962 26.889,10.272 26.007,10.861C25.124,11.45 23.834,13.268 23.563,15.466C23.293,17.664 22.827,24.94 23,29.305C23.174,33.67 23,40.202 23,40.202L22.989,46.786L12.769,55.409C12.769,55.409 2.467,64.421 2.498,64.451C2.53,64.482 0.794,65.995 0.512,67.155C0.23,68.314 -0.319,69.785 0.326,71.809C0.971,73.833 0.732,73.401 1.28,73.963Z"/>
@@ -39,7 +39,7 @@
     <aside style="position: fixed; z-index: 100000000; bottom: .75rem; right: .75rem; width: 6.5rem;">
         <img src="./Images/Logo.svg" alt="Mola">
     </aside>
-    <script src="./JS/Calendar22.js"></script>
+    <script src="./JS/Calendar.min.js"></script>
 </body>
 
 </html>
